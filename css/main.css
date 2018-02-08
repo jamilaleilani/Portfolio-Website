@@ -5,6 +5,7 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*fonts and text sizing, general styling*/
@@ -30,6 +31,8 @@ h4 {
 p {
   font-family: lato, sans-serif;
   font-size: 1.2em;
+  text-align: justify;
+  padding: 1em;
 }
 
 img {
@@ -46,9 +49,11 @@ body {
 
 /* ASIDE */
 aside {
+  position: fixed;
   margin-top: 3em;
   padding: 4em 1.5em;
-  min-height: 60em;
+  width: 17em;
+  height: 60em;
   border-right: .18em solid black;
 }
 
@@ -67,19 +72,18 @@ aside nav a {
 
 /* MAIN */
 main {
-  width: 80%;
+  margin-left: 17em;
   text-align: center;
+  width: 100%;
 }
 
 /*Sections in Main*/
 section {
-  padding: 2em 2em;
   display: none;
-  width: 90%;
 }
 
 section nav {
-  display: fixed;
+  position: fixed;
   text-align: left;
   padding-top: 3em;
 }
@@ -91,8 +95,16 @@ section nav a {
 
 /*Articles in Sections*/
 article {
+  padding-top: 6em;
   display: none;
+  margin: 0 auto;
 }
+
+.content {
+  width: 75%;
+  margin: 0 auto;
+}
+
 /*Artist Section*/
 #art article div{
   display: flex;
@@ -104,14 +116,13 @@ article {
 #art article {
   display: flex;
   flex-direction: row;
-  padding: 2%;
 }
 
 /* About Section */
 
 #about {
   /*display: flex;*/
-  margin: 2em auto;
+  margin: 0 auto;
   width: 70%;
 }
 
@@ -121,75 +132,56 @@ article {
   padding: 2em;
 }
 
-#about p {
-  text-align: justify;
-  padding: 1em;
-}
-
 
 
 /*Project One*/
-/*#projectonegame main {
+
+.gamemain {
   padding: 1em 0;
   background-color: rgb(80,120,180);
   background-image: url("../img/seaweed.png");
   background-repeat: no-repeat;
-  background-size: 8em;
+  background-size: 5em;
   background-position: bottom 0 right 0;
 }
 
-#projectonegame header {
+.gameheader {
   background-color: rgb(210,230,250);
   padding: 3em;
-  height: 16em;
-}
-
-#projectonegame section {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 5%;
-  z-index: 1;
+  /*width: 70em;*/
 }
 
 #projectonegame h1 {
   color: white;
-  font-size: 6em;
+  font-size: 3em;
+  text-transform: none;
 }
 
 #projectonegame p {
-  line-height: 1.5em;
+  padding: .2em;
   font-size: 1.5em;
   color: rgb(130,140,255);
-  padding-left: 2em;
+  text-align: right;
 }
 
 #projectonegame h2 {
   text-decoration: none;
+  padding: .7em .2em;
   font-size: 3em;
-  padding: 1.5em 1em;
   color: white;
   background-color: rgb(255, 220, 0);
   border-radius: 3em;
   position: absolute;
-  top: 1em;
-
+  top: 3em;
 }
 
-#projectonegame footer {
-  height: 200px;
+.gamemain div {
+  width: 10em;
+  z-index: 1;
+}
+
+.gamesand {
+  height: 3em;
   background-color: tan;
-  z-index: 1;
 }
-
-#projectonegame div {
-  width: 17em;
-  z-index: 1;
-  margin-bottom: .2em;
-}
-
-#projectonegame img {
-  width: 100%;
-} /*
-
 /**/
