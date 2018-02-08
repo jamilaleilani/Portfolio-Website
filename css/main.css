@@ -14,14 +14,22 @@ h1 {
   line-height: 1em;
   text-transform: uppercase;
   font-size: 3em;
+  text-align: right;
 }
 
 h3 {
   font-size: 1.5em;
 }
 
+h4 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-top: 2em;
+}
+
 p {
   font-family: lato, sans-serif;
+  font-size: 1.2em;
 }
 
 img {
@@ -29,9 +37,6 @@ img {
   padding: 2%;
 }
 
-nav {
-  display: flex;
-}
 
 /* BODY -- flex*/
 body {
@@ -41,32 +46,54 @@ body {
 
 /* ASIDE */
 aside {
-  background-color: rgb(240,240,240);
-  width: 15%;
-  padding: .4em;
+  margin-top: 3em;
+  padding: 4em 1.5em;
+  min-height: 60em;
+  border-right: .18em solid black;
 }
 
 aside nav {
+  display: flex;
   flex-direction: column;
+  padding-top: 2em;
+  text-align: right;
 }
 
 aside nav a {
   font-size: 1.5em;
+  padding-top: 1em;
+  color: black;
 }
 
 /* MAIN */
 main {
   width: 80%;
-  padding: .4em;
   text-align: center;
 }
 
-section nav {
-  flex-direction: row;
+/*Sections in Main*/
+section {
+  padding: 2em 2em;
+  display: none;
+  width: 90%;
 }
 
-/*Artist*/
+section nav {
+  display: fixed;
+  text-align: left;
+  padding-top: 3em;
+}
 
+section nav a {
+  padding-left: 1.5em;
+  color: black;
+}
+
+/*Articles in Sections*/
+article {
+  display: none;
+}
+/*Artist Section*/
 #art article div{
   display: flex;
   flex-direction: column;
@@ -80,7 +107,89 @@ section nav {
   padding: 2%;
 }
 
+/* About Section */
 
-/**/
-/**/
+#about {
+  /*display: flex;*/
+  margin: 2em auto;
+  width: 70%;
+}
+
+#about img {
+  width: 40%;
+  float: left;
+  padding: 2em;
+}
+
+#about p {
+  text-align: justify;
+  padding: 1em;
+}
+
+
+
+/*Project One*/
+/*#projectonegame main {
+  padding: 1em 0;
+  background-color: rgb(80,120,180);
+  background-image: url("../img/seaweed.png");
+  background-repeat: no-repeat;
+  background-size: 8em;
+  background-position: bottom 0 right 0;
+}
+
+#projectonegame header {
+  background-color: rgb(210,230,250);
+  padding: 3em;
+  height: 16em;
+}
+
+#projectonegame section {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 5%;
+  z-index: 1;
+}
+
+#projectonegame h1 {
+  color: white;
+  font-size: 6em;
+}
+
+#projectonegame p {
+  line-height: 1.5em;
+  font-size: 1.5em;
+  color: rgb(130,140,255);
+  padding-left: 2em;
+}
+
+#projectonegame h2 {
+  text-decoration: none;
+  font-size: 3em;
+  padding: 1.5em 1em;
+  color: white;
+  background-color: rgb(255, 220, 0);
+  border-radius: 3em;
+  position: absolute;
+  top: 1em;
+
+}
+
+#projectonegame footer {
+  height: 200px;
+  background-color: tan;
+  z-index: 1;
+}
+
+#projectonegame div {
+  width: 17em;
+  z-index: 1;
+  margin-bottom: .2em;
+}
+
+#projectonegame img {
+  width: 100%;
+} /*
+
 /**/
