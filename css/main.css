@@ -7,33 +7,7 @@
   padding: 0;
 }
 
-
-
-img {
-  width: 100%;
-}
-
-nav {
-  display: flex;
-}
-
-aside nav {
-  flex-direction: column;
-}
-
-aside nav a {
-  font-size: 1.5em;
-}
-
-
-section nav {
-  flex-direction: row;
-}
-
-
-
-
-/*fonts and text sizing*/
+/*fonts and text sizing, general styling*/
 h1 {
   font-family: Monoton, sans-serif;
   font-weight: 400;
@@ -50,29 +24,63 @@ p {
   font-family: lato, sans-serif;
 }
 
+img {
+  width: 100%;
+  padding: 2%;
+}
 
-/**/
+nav {
+  display: flex;
+}
+
+/* BODY -- flex*/
 body {
   display: flex;
   flex-direction: row;
 }
 
+/* ASIDE */
 aside {
   background-color: rgb(240,240,240);
   width: 15%;
   padding: .4em;
 }
 
+aside nav {
+  flex-direction: column;
+}
+
+aside nav a {
+  font-size: 1.5em;
+}
+
+/* MAIN */
 main {
   width: 80%;
   padding: .4em;
   text-align: center;
 }
 
+section nav {
+  flex-direction: row;
+}
+
+/*Artist*/
+
+#art article div{
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  padding: 1%;
+}
+
+#art article {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
 
 
 /**/
-
 /**/
-
 /**/
