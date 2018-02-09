@@ -25,7 +25,7 @@ h3 {
 h4 {
   font-size: 2em;
   text-transform: uppercase;
-  padding-top: 2em;
+  padding: 3em 0 2em 0;
 }
 
 p {
@@ -37,7 +37,6 @@ p {
 
 img {
   width: 100%;
-  padding: 2%;
 }
 
 
@@ -64,10 +63,13 @@ aside nav {
   text-align: right;
 }
 
+aside a {
+  color: black;
+}
+
 aside nav a {
   font-size: 1.5em;
   padding-top: 1em;
-  color: black;
 }
 
 /* MAIN */
@@ -84,8 +86,12 @@ section {
 
 section nav {
   position: fixed;
+  top: 0;
   text-align: left;
-  padding-top: 3em;
+  padding: 3em 0 1em 4em;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
 }
 
 section nav a {
@@ -93,11 +99,13 @@ section nav a {
   color: black;
 }
 
-/*Articles in Sections*/
+/* Homepage */
+
+/* Articles in Sections*/
 article {
-  padding-top: 6em;
+  padding-top: 4em;
   display: none;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .content {
@@ -105,34 +113,25 @@ article {
   margin: 0 auto;
 }
 
-/*Artist Section*/
-#art article div{
+/*Projects Section*/
+.sectionhome {
   display: flex;
-  flex-direction: column;
-  width: 33.33%;
-  padding: 1%;
+  flex-flow: row wrap;
+  padding-top: 5em;
 }
 
-#art article {
-  display: flex;
-  flex-direction: row;
+#projectshome div, #arthome div {
+  margin: 2% 0 0 2%;
+  background-color: pink;
 }
 
-/* About Section */
-
-#about {
-  /*display: flex;*/
-  margin: 0 auto;
-  width: 70%;
+#projectshome div {
+  width: 30.5%;
 }
 
-#about img {
-  width: 40%;
-  float: left;
-  padding: 2em;
+#arthome div {
+  width: 47%;
 }
-
-
 
 /*Project One*/
 
@@ -148,7 +147,6 @@ article {
 .gameheader {
   background-color: rgb(210,230,250);
   padding: 3em;
-  /*width: 70em;*/
 }
 
 #projectonegame h1 {
@@ -180,8 +178,121 @@ article {
   z-index: 1;
 }
 
+#projectonegame img {
+  margin-right: 0;
+}
+
 .gamesand {
   height: 3em;
   background-color: tan;
 }
+
+/*Artist Section*/
+#art article div {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  padding: 1%;
+}
+
+#art article {
+  display: flex;
+  flex-direction: row;
+}
+
+#art article img {
+  margin: 2% 0;
+}
+
+/* About and Comment Section */
+#about, #contact {
+  margin: 7em auto 0 auto;
+  width: 70%;
+}
+
+/*About Section*/
+#about img {
+  width: 40%;
+  float: left;
+  padding: 0 2em 2em 2em;
+}
+
+/* Comment Form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+button, input, textarea {
+  font-size: 1em;
+  letter-spacing: .2em;
+  border: .14em solid black;
+  resize: none;
+  padding: .7em;
+}
+
+input, textarea {
+  font-family: lato, sans-serif;
+}
+
+.nameemail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nameemail div { /*sets width of input + error message div*/
+  width: 32.5%;
+}
+
+.nameemail input {
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+textarea {
+  height: 18em;
+  margin: .5em 0;
+}
+
+button {
+  width: 100%;
+  margin: .5em 0;
+  text-transform: uppercase;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: uppercase;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: uppercase;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: uppercase;
+}
+
+::placeholder { /* Recent browsers */
+    text-transform: uppercase;
+}
+
+.error {
+  display: none;
+  border: .14em solid red;
+}
+
+.errorMessage {
+  display: none;
+  color: red;
+  text-align: left;
+  font-size: .9em;
+  padding: 0 0 .7em 0;
+}
+
 /**/

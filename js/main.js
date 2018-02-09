@@ -2,16 +2,27 @@
 
 $(function() {
 
+  //Homepage
+
+  $("#homepage, #homepage article, #about, #contact, #footer").show();
+
+  $(".name").on("click", function() {
+    console.log("working!");
+    $("section, article").hide();
+    $("#homepage, #homepage article, #contact, #about, #footer").show();
+  })
+
+
   //Side Nav Links
 
-  $("aside a").each(function() {
+  $("aside nav a").each(function() {
     $(this).on("click", function() {
     //console.log("working!");
     var sectionID = $(this).attr("href");
-    var section = "section" + sectionID;
-    //console.log(section);
+    console.log(sectionID);
     $("section, article").hide();
-    $(section).show();
+    $(sectionID).show();
+    $(".sectionhome").show();
     })
   });
 
@@ -19,12 +30,29 @@ $(function() {
   $("section a").each(function() {
     $(this).on("click", function() {
     //console.log("working!");
-    var sectionID = $(this).attr("href");
-    var section = "article" + sectionID;
+    var section = $(this).attr("href");
     //console.log(section);
-    $("article").hide();
+    $(".sectionhome, article").hide();
     $(section).show();
     })
+  });
+
+//Contact Form
+
+    //checking for errors
+
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
+    $(".checkForError").each(function() {
+      if ($(this).val() === "") {
+        $(this).addClass("error");
+        $(".error").show();
+        $(this).siblings(".errorMessage").show();
+      } else {
+        $(this).removeClass("error");
+        $(this).siblings(".errorMessage").hide();
+      }
+    });
   });
 
 
