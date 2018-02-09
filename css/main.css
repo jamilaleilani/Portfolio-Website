@@ -43,6 +43,13 @@ li {
   padding: .3em 0;
 }
 
+span a {
+  font-size: 1.3em;
+  padding: 4em 2em 6em 2em;
+  display: inline-block;
+  color: black;
+}
+
 #art img, #projects img {
   width: 100%;
 }
@@ -144,6 +151,7 @@ article {
   margin: 2% 0 0 2%;
   background-color: grey;
   background-size: cover;
+  background-position: center;
 }
 
 #projectshome div {
@@ -179,13 +187,13 @@ article {
   background-image: url("../img/game.jpg");
 }
 #projectshometwo {
-  background-image: url("../img/.jpg");
+  background-image: url("../img/monument.jpg");
 }
 #projectshomethree {
-  background-image: url("../img/.jpg");
+  background-image: url("../img/shoppingcart.jpg");
 }
 #projectshomefour {
-  background-image: url("../img/.jpg");
+  background-image: url("../img/geoquakes.jpg");
 }
 #projectshomefive {
   background-image: url("../img/.jpg");
