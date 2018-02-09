@@ -27,7 +27,7 @@ $(function() {
   });
 
 //Seciton Nav Links
-  $("section a").each(function() {
+  $("section nav a").each(function() {
     $(this).on("click", function() {
     //console.log("working!");
     var section = $(this).attr("href");
