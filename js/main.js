@@ -4,7 +4,7 @@ $(function() {
 
   //Homepage
 
-  $("#homepage, #homepage article, #about, #contact, #footer").show();
+  $("#homepage, #homepage section, #about, #contact, #footer").show();
 
   $(".name").on("click", function() {
     console.log("working!");

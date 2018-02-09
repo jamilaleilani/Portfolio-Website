@@ -30,8 +30,8 @@ h4 {
 
 p {
   font-family: lato, sans-serif;
-  font-size: 1.2em;
-  text-align: justify;
+  font-size: 1.5em;
+  text-align: center;
   padding: 1em;
 }
 
@@ -113,16 +113,24 @@ article {
   margin: 0 auto;
 }
 
-/*Projects Section*/
+/*Section Home*/
 .sectionhome {
   display: flex;
   flex-flow: row wrap;
   padding-top: 5em;
 }
 
+.sectionhome p {
+  color: black;
+  background-color: rgba(255,255,255,.6);
+  text-align: center;
+  font-family: futura, sans-serif;
+}
+
 #projectshome div, #arthome div {
   margin: 2% 0 0 2%;
-  background-color: pink;
+  background-color: grey;
+  background-size: cover;
 }
 
 #projectshome div {
@@ -131,6 +139,51 @@ article {
 
 #arthome div {
   width: 47%;
+}
+
+#arthome div p {
+  margin-top: 55%;
+}
+
+#projectshome div p {
+  margin-top: 53%;
+}
+
+#arthomeone {
+  background-image: url("../img/mural2-copy.jpg");
+}
+#arthometwo {
+  background-image:url("../img/handwearing2-copy.jpg")
+}
+#arthomethree {
+  background-image: url("../img/cosmos-copy.jpg");
+}
+#arthomefour {
+  background-image: url("../img/shibori-copy.jpg");
+}
+
+#projectshomeone {
+  background-image: url("../img/game.jpg");
+}
+#projectshometwo {
+  background-image: url("../img/.jpg");
+}
+#projectshomethree {
+  background-image: url("../img/.jpg");
+}
+#projectshomefour {
+  background-image: url("../img/.jpg");
+}
+#projectshomefive {
+  background-image: url("../img/.jpg");
+}
+#projectshomesix {
+  background-image: url("../img/.jpg");
+}
+
+/*Projects*/
+#projects article p {
+  font-size: 1.2em;
 }
 
 /*Project One*/
@@ -157,7 +210,6 @@ article {
 
 #projectonegame p {
   padding: .2em;
-  font-size: 1.5em;
   color: rgb(130,140,255);
   text-align: right;
 }
@@ -215,6 +267,11 @@ article {
   width: 40%;
   float: left;
   padding: 0 2em 2em 2em;
+}
+
+#about p {
+  text-align: justify;
+  font-size: 1.2em;
 }
 
 /* Comment Form */
@@ -295,4 +352,4 @@ button:hover {
   padding: 0 0 .7em 0;
 }
 
-/**/
+/*Footer*/
