@@ -31,11 +31,19 @@ h4 {
 p {
   font-family: lato, sans-serif;
   font-size: 1.5em;
-  text-align: center;
+  text-align: justify;
   padding: 1em;
+  line-height: 1.5em;
 }
 
-img {
+li {
+  font-family: lato, sans-serif;
+  list-style: none;
+  font-size: 2em;
+  padding: .3em 0;
+}
+
+#art img, #projects img {
   width: 100%;
 }
 
@@ -88,7 +96,7 @@ section nav {
   position: fixed;
   top: 0;
   text-align: left;
-  padding: 3em 0 1em 4em;
+  padding: 4em 0 1em 2em;
   background-color: white;
   width: 100%;
   z-index: 1;
@@ -100,6 +108,11 @@ section nav a {
 }
 
 /* Homepage */
+
+#homepage {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Articles in Sections*/
 article {
@@ -142,7 +155,7 @@ article {
 }
 
 #arthome div p {
-  margin-top: 55%;
+  margin-top: 45%;
 }
 
 #projectshome div p {
@@ -179,6 +192,62 @@ article {
 }
 #projectshomesix {
   background-image: url("../img/.jpg");
+}
+
+/*Intro*/
+#intro {
+  padding-top: 8em;
+  display: flex;
+  flex-direction: row;
+}
+
+#intro img {
+  height: 30em;
+}
+
+#intro p {
+  font-size: 1.7em;
+  padding: 1em 2em;
+}
+
+/*Skills*/
+#skills {
+  padding: 9em 0 3em 0;
+}
+
+#skills div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: .15em solid black;
+  margin: 0 auto;
+}
+
+#skills ul {
+  padding: 3em;
+}
+
+#skills h4 {
+  padding: .5em 0;
+  border-bottom: .15em solid black
+}
+
+.toolslist {
+  text-align: right;
+}
+
+.skillslist {
+  text-align: left;
+}
+
+/*Testimonials*/
+#testimonials {
+  padding-top: 4em;
+}
+
+#testimonials p {
+  text-align: center;
+  font-size: 1.7em;
 }
 
 /*Projects*/
@@ -230,10 +299,6 @@ article {
   z-index: 1;
 }
 
-#projectonegame img {
-  margin-right: 0;
-}
-
 .gamesand {
   height: 3em;
   background-color: tan;
@@ -264,9 +329,9 @@ article {
 
 /*About Section*/
 #about img {
-  width: 40%;
+  width: 50%;
   float: left;
-  padding: 0 2em 2em 2em;
+  padding: 2em 2em 1em 2em;
 }
 
 #about p {
@@ -353,3 +418,9 @@ button:hover {
 }
 
 /*Footer*/
+
+#footer p{
+  padding: 10em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}

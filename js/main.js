@@ -4,12 +4,12 @@ $(function() {
 
   //Homepage
 
-  $("#homepage, #homepage section, #about, #contact, #footer").show();
+  $("#homepage, #homepage section, #contact, #footer").show();
 
   $(".name").on("click", function() {
     console.log("working!");
     $("section, article").hide();
-    $("#homepage, #homepage article, #contact, #about, #footer").show();
+    $("#homepage, #homepage section, #contact, #footer").show();
   })
 
 
