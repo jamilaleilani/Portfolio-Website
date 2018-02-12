@@ -54,14 +54,12 @@ $(function() {
 
 //responsive--> hamburger on click show menu
 
-function() {
-  var screenWidth = $("html").css("width");
-  if ()
+
   $("#menu").on("click", function() {
     $("aside").toggle();
   })
 
-}
+
 
 
 });
