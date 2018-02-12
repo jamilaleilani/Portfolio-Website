@@ -440,7 +440,7 @@ button:hover {
 }
 
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   body {
     flex-direction: column;
   }
@@ -501,6 +501,14 @@ button:hover {
     text-transform: uppercase;
   }
 
+  h4 {
+    padding-top: 4em;
+  }
+
+  #projectonegame {
+    display: none;
+  }
+
   .nameemail {
     flex-direction: column;
   }
@@ -509,8 +517,8 @@ button:hover {
     width: 100%;
   }
 
-}
 
+}
 
 
 

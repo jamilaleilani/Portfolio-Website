@@ -3,7 +3,6 @@
 $(function() {
 
   //Homepage
-
   $("#homepage, #homepage section, #contact, #footer").show();
 
   $(".name").on("click", function() {
@@ -14,7 +13,6 @@ $(function() {
 
 
   //Nav Links
-
   var navLinks = function(element, hideElement, showElement) {
 
     $(element).each(function() {
@@ -34,9 +32,7 @@ $(function() {
 
 
 
-//Contact Form
-
-    //checking for errors
+//Contact Form - checking for errors
 
   $("#submit").on("click", function(event) {
     event.preventDefault();
@@ -54,12 +50,19 @@ $(function() {
 
 //responsive--> hamburger on click show menu
 
-
-  $("#menu").on("click", function() {
-    $("aside").toggle();
-  })
-
-
-
+  /*$(function() {
+    var screenWidth = document.body.offsetWidth;
+    console.log(screenWidth);
+    if (screenWidth <= 900) {*/
+      $("#menu").on("click", function() {
+        console.log("is this working?")
+        $("aside").toggle();
+      });
+   /* }) } else {
+        $("#menu").hide();
+        $("aside").show();
+        console.log("is THIS working?")
+      }
+  })*/
 
 });
