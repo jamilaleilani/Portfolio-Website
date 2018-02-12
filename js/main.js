@@ -13,29 +13,26 @@ $(function() {
   })
 
 
-  //Side Nav Links
+  //Nav Links
 
-  $("aside nav a").each(function() {
-    $(this).on("click", function() {
-    //console.log("working!");
-    var sectionID = $(this).attr("href");
-    console.log(sectionID);
-    $("section, article").hide();
-    $(sectionID).show();
-    $(".sectionhome").show();
-    })
-  });
+  var navLinks = function(element, hideElement, showElement) {
 
-//Seciton Nav Links
-  $("section nav a, section div a").each(function() {
-    $(this).on("click", function() {
-    //console.log("working!");
-    var section = $(this).attr("href");
-    //console.log(section);
-    $(".sectionhome, article").hide();
-    $(section).show();
-    })
-  });
+    $(element).each(function() {
+      $(this).on("click", function() {
+      //console.log("working!");
+      var section = $(this).attr("href");
+      //console.log(section);
+      $(hideElement).hide();
+      $(section).show();
+      $(showElement).show();
+      })
+    });
+  }
+
+  navLinks("aside nav a", "section, article", ".sectionhome");
+  navLinks("section nav a, section div a", ".sectionhome, article");
+
+
 
 //Contact Form
 
@@ -57,9 +54,14 @@ $(function() {
 
 //responsive--> hamburger on click show menu
 
-$("#menu").on("click", function() {
-  $("aside").toggle();
-})
+function() {
+  var screenWidth = $("html").css("width");
+  if ()
+  $("#menu").on("click", function() {
+    $("aside").toggle();
+  })
+
+}
 
 
 });
