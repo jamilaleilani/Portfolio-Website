@@ -55,6 +55,11 @@ $(function() {
     });
   });
 
+//responsive--> hamburger on click show menu
+
+$("#menu").on("click", function() {
+  $("aside").toggle();
+})
 
 
 });

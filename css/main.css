@@ -9,6 +9,10 @@
 }
 
 /*fonts and text sizing, general styling*/
+#menu {
+  display: none;
+}
+
 h1 {
   font-family: Monoton, sans-serif;
   font-weight: 400;
@@ -48,6 +52,16 @@ span a {
   padding: 4em 2em 6em 2em;
   display: inline-block;
   color: black;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+#intro img, #about img {
+  width: 50%;
+  float: left;
+  padding: 2em 2em 1em 2em;
 }
 
 #art img, #projects img {
@@ -125,7 +139,7 @@ section nav a {
 article {
   padding-top: 4em;
   display: none;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 .content {
@@ -172,6 +186,7 @@ article {
 
 #arthomeone {
   background-image: url("../img/mural2-copy.jpg");
+
 }
 #arthometwo {
   background-image:url("../img/handwearing2-copy.jpg")
@@ -182,6 +197,8 @@ article {
 #arthomefour {
   background-image: url("../img/shibori-copy.jpg");
 }
+
+
 
 #projectshomeone {
   background-image: url("../img/game.jpg");
@@ -205,17 +222,10 @@ article {
 /*Intro*/
 #intro {
   padding-top: 8em;
-  display: flex;
-  flex-direction: row;
-}
-
-#intro img {
-  height: 30em;
 }
 
 #intro p {
   font-size: 1.7em;
-  padding: 1em 2em;
 }
 
 /*Skills*/
@@ -321,6 +331,7 @@ article {
 }
 
 #art article {
+  padding-top: 6em;
   display: flex;
   flex-direction: row;
 }
@@ -336,11 +347,6 @@ article {
 }
 
 /*About Section*/
-#about img {
-  width: 50%;
-  float: left;
-  padding: 2em 2em 1em 2em;
-}
 
 #about p {
   text-align: justify;
@@ -432,3 +438,103 @@ button:hover {
   margin: 0 auto;
   text-align: center;
 }
+
+
+@media screen and (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  aside {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    font-size: 3em;
+    z-index: 2;
+    text-align: right;
+    padding: .6em;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    color: black;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  section nav {
+    padding-top: 7em;
+  }
+
+  aside {
+    margin-left: .5em;
+    margin-top: 2em;
+    top: 0;
+    padding: 0;
+    width: 80%;
+    height: 3em;
+    border: .18em solid black;
+    z-index: 2;
+  }
+
+  aside h1 {
+    display: none;
+  }
+
+  aside nav {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  aside nav a {
+    font-size: .9em;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .nameemail {
+    flex-direction: column;
+  }
+
+  .nameemail div {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
