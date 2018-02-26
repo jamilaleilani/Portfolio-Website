@@ -5,17 +5,21 @@ $(function() {
   var goldfish = $("#goldfish");
 
   function fishMoving(letterVal, fish, fishType) {
+    // TODO: Remove console logs and commented code from your development builds :)
     //console.log("working1");
-    $(fish).css ("margin-left", "0px");
+    $(fish).css("margin-left", "0px");
     //console.log($(fish).css("margin-left"));
     //console.log("working2");
     $("html").keydown(function(whichKey) {
       var fishMarginLeft = parseInt($(fish).css("margin-left"));
+// TODO: Remove console logs and commented code from your development builds :)
       //console.log(fishMarginLeft);
+      // TODO: Can you turn the logical expression below into a variable that reads a little friendlier?
       if (whichKey.keyCode === letterVal && fishMarginLeft < 1000) {
         $(fish).css("margin-left", (fishMarginLeft + 10 + "px"));
         //console.log("hi");
       } else if (fishMarginLeft >= 999 && $("#projectonegame h1").html() === "SHARK vs GOLDFISH") {
+        // TODO: This adds an inline css style, can you toggle a class on or off instead?
         $("#projectonegame h1").css("color", "magenta");
         $("#projectonegame h1").html(fishType + " wins!");
       }
@@ -74,4 +78,3 @@ $('#projectonegame h2').on('click', function() {
 
 
 })
-

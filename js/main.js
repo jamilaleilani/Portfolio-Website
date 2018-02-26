@@ -15,6 +15,7 @@ $(function() {
   //Nav Links
   var navLinks = function(element, hideElement, showElement) {
 
+    // TODO: Very snazzy!
     $(element).each(function() {
       $(this).on("click", function() {
       //console.log("working!");
