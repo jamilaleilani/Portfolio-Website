@@ -1,5 +1,3 @@
-
-
 $(function() {
 
   //Homepage
@@ -11,15 +9,12 @@ $(function() {
     $("#homepage, #homepage section, #contact, #footer").show();
   })
 
-
   //Nav Links
   var navLinks = function(element, hideElement, showElement) {
 
     $(element).each(function() {
       $(this).on("click", function() {
-      //console.log("working!");
       var section = $(this).attr("href");
-      //console.log(section);
       $(hideElement).hide();
       $(section).show();
       $(showElement).show();
@@ -30,10 +25,7 @@ $(function() {
   navLinks("aside nav a", "section, article", ".sectionhome");
   navLinks("section nav a, section div a", ".sectionhome, article");
 
-
-
 //Contact Form - checking for errors
-
   $("#submit").on("click", function(event) {
     event.preventDefault();
     $(".checkForError").each(function() {
@@ -49,20 +41,22 @@ $(function() {
   });
 
 //responsive--> hamburger on click show menu
+  $("#menu").on("click", function() {
+    console.log("is this working?")
+    $("aside").toggle();
+  });
 
-  /*$(function() {
-    var screenWidth = document.body.offsetWidth;
-    console.log(screenWidth);
-    if (screenWidth <= 900) {*/
-      $("#menu").on("click", function() {
-        console.log("is this working?")
-        $("aside").toggle();
-      });
-   /* }) } else {
-        $("#menu").hide();
-        $("aside").show();
-        console.log("is THIS working?")
-      }
-  })*/
+  //hide and show aside with window resize
+  $(window).on("resize", function() {
+    if ($("body").outerWidth() > 900) {
+      $("aside").show();
+   }
+  });
+
+  $(window).on("resize", function() {
+    if ($("body").outerWidth() <= 900) {
+      $("aside").hide();
+    }
+  });
 
 });
