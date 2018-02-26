@@ -1,3 +1,5 @@
+/* TODO: Fantastic CSS work! Consider organizing your css selectors by tags, then classes, then ids. This makes a descending pattern of specificity. */
+
 * {
   font-family: futura, sans-serif;
   font-size: 14px;
@@ -519,29 +521,3 @@ button:hover {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
